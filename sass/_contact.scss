@@ -1,0 +1,79 @@
+#contact
+{
+    &-a
+    {
+        .form-fields
+        {
+            display: grid;
+            gap: 1rem;
+            grid-template-areas: 
+            'name email'
+            'subject phone'
+            'message message'
+            'button button';
+        }
+
+
+        .name
+        {
+            grid-area: name;
+        }
+
+        .email
+        {
+            grid-area: email;
+        }
+    
+        .subject
+        {
+            grid-area: subject;
+        }
+    
+    
+        .phone
+        {
+            grid-area: phone;
+        }
+
+        .message
+        {
+            grid-area: message;
+        }
+
+        .button
+        {
+            grid-area: button;
+        
+        &:hover
+        {
+            background-color: $primary-color;
+        }
+        
+        }
+
+        .input
+        {
+            padding: 1rem;
+        }
+    }
+
+    &-b
+    {
+
+        .contact-info
+        {
+  display: flex;
+justify-content: space-evenly;
+        // flex-direction: row;
+        color: white;
+        
+    
+            div{
+                text-align: center;
+                line-height: 2rem;
+            }
+    
+    }
+      
+    }
+}
